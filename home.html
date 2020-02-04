@@ -1,0 +1,25 @@
+<h1>home</h1>
+
+<div ng-controller="homeController">
+
+  <form name="userForm" ng-submit="sendData();">
+    <p>Name: <input type="text" ng-model="users.name" required></p>
+    <p>Age: <input type="text" ng-model="users.age" required></p>
+    <p>Email: <input type="text" ng-model="users.email" required></p>
+    <p>Phone: <input type="text" ng-model="users.phone" required></p>
+    <p>Address: <input type="text" ng-model="users.address" required></p>
+    <button type="submit" ng-disabled="userForm.$invalid">Submit Data</button>
+  </form>
+
+</div>
+
+
+<h2>Update data</h2>
+<div ng-controller="usersController">
+<p>Name: {{ users.name }} </p>
+<p>Age: {{ users.age }} </p>
+<p>Email: {{ users.email }} </p>
+<p>Phone: {{ users.phone }} </p>
+<p>Adress: {{ users.address }} </p>
+  
+</div>
